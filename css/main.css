@@ -1,0 +1,113 @@
+
+body  {
+  margin: 0;
+  padding: 0;
+  background-color: #FFBC3A;
+  height: 100vh;
+  /* cursor: url('../images/knife.png'),auto; */
+  cursor: url('../images/hammer.png'),auto;
+}
+
+/* All images(items) should have the same size by default */
+body > main > img {
+  width: 10em;
+  height: 10em;
+}
+
+body > header > h1 {
+  margin: 0;
+}
+
+aside > img {
+  width: 10em;
+  height: 10em;
+}
+
+/* Knife tool */
+body > aside:nth-child(3) > img:nth-child(1) {
+  position: fixed;
+  top: 20%;
+  left: -2.5em;
+}
+
+/* Knife tool turn on hover */
+body > aside:nth-child(3) > img:nth-child(1):hover {
+  transform: rotate(-20deg);
+}
+
+/* Hammer tool */
+body > aside:nth-child(3) > img:nth-child(2) {
+  position: fixed;
+  top: 50%;
+  left: -2.5em;
+}
+
+/* Hammer tool turn on hover */
+body > aside:nth-child(3) > img:nth-child(2):hover {
+  transform: rotate(-20deg);
+}
+
+/* Ketchup */
+body > aside:nth-child(4) > img:nth-child(1) {
+  position: fixed;
+  top: 20%;
+  right: -2.5em;
+}
+
+/* Ketchup  turn on hover */
+body > aside:nth-child(4) > img:nth-child(1):hover {
+  transform: rotate(-20deg);
+}
+
+/* Mayonnaise */
+body > aside:nth-child(4) > img:nth-child(2) {
+  position: fixed;
+  top: 50%;
+  right: -2.5em;
+}
+
+/* Mayonnaise  turn on hover */
+body > aside:nth-child(4) > img:nth-child(2):hover {
+  transform: rotate(-20deg);
+}
+
+/* Floating burger */
+body > main > img:nth-child(1) {
+  animation: floatBurger 6s ease-in-out infinite;
+  z-index: -1;
+  border: solid red 2px;
+  fill: green;
+}
+
+@keyframes floatBurger {
+	0% {
+		transform: translate(0px);
+
+	}
+
+  25%{
+    		transform: translate(100%, 100%);
+
+  }
+	50% {
+		transform: translate(50%, 50%);
+
+	}
+
+  75%{
+    		transform: translate(100%, 100%);
+
+  }
+	100% {
+		transform: translatey(0px);
+	}
+
+}
+
+footer > img {
+  width: 15em;
+  height: 15em;
+  position: fixed;
+  bottom: 0;
+  left: 45%;
+}
