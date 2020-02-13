@@ -2,111 +2,258 @@
 body  {
   margin: 0;
   padding: 0;
-  background-color: #FFBC3A;
+  /* background-color: #FFBC3A; */
   height: 100vh;
   /* cursor: url('../images/knife.png'),auto; */
-  cursor: url('../images/hammer.png'),auto;
+  /* cursor: url('../images/hammer.png'),auto; */
+  /* perspective: 1800px; */
 }
+
+
 
 /* All images(items) should have the same size by default */
-body > main > img {
-  width: 10em;
-  height: 10em;
+body > div > main > img {
+  width: 6em;
+  height: 6em;
 }
 
-body > header > h1 {
+body > div > header {
+  position: fixed;
+  top: 10%;
+  left: 40%;
+  text-align: center;
+  animation: spinningHeader 3s ease-in-out infinite;
+}
+
+@keyframes spinningHeader {
+  0% {
+    transform: rotateY(0);
+  }
+  25% {
+    transform: rotateY(180deg);
+  }
+  50% {
+    transform: rotateY(270deg);
+  }
+  75% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}
+
+body > div > header > h1 {
   margin: 0;
+  /* font-family: 'Bungee Inline', cursive; */
+  /* font-family: 'Krona One', sans-serif; */
+  color: #A93028;
+  text-shadow: 2px 2px #583D34;
+  font-size: 3em;
+  font-family: 'Fredoka One', cursive;
+  text-transform: uppercase;
 }
 
-aside > img {
+body > div > header > p {
+  font-family: 'Krona One', sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+aside > img, aside > label > img {
   width: 10em;
   height: 10em;
 }
 
 /* Knife tool */
-body > aside:nth-child(3) > img:nth-child(1) {
+body > div > aside:nth-child(3) > label:nth-child(1) > img {
   position: fixed;
   top: 20%;
   left: -2.5em;
 }
 
 /* Knife tool turn on hover */
-body > aside:nth-child(3) > img:nth-child(1):hover {
+body > div > aside:nth-child(3) > label:nth-child(1) > img:hover {
   transform: rotate(-20deg);
 }
 
+/* [type="radio"]:nth-of-type(1):checked ~ [for="stateKnife"]:hover {
+  background-color: green;
+} */
+
+
+html:target > body {
+  /* cursor: help; */
+  cursor: url('../images/knife.png'), auto;
+}
+
+head:target ~ body {
+  /* cursor: copy; */
+  cursor: url('../images/hammer.png'), auto;
+}
+
+
+
+
+/* #stateKnife:checked ~ .wrapper {
+    cursor: url('../images/knife.png'), auto;
+}
+
+#stateHammer:checked ~ .wrapper {
+    cursor: url('../images/hammer.png'), auto;
+    cursor: help;
+} */
+
+
+.wrapper {
+  background-color: #FFBC3A;
+  height: 100%;
+  width:100%;
+}
+
+
 /* Hammer tool */
-body > aside:nth-child(3) > img:nth-child(2) {
+body > div > aside:nth-child(3) > label:nth-child(2) > img{
   position: fixed;
   top: 50%;
   left: -2.5em;
 }
 
 /* Hammer tool turn on hover */
-body > aside:nth-child(3) > img:nth-child(2):hover {
+body > div > aside:nth-child(3) > label:nth-child(2) > img:hover {
   transform: rotate(-20deg);
 }
 
 /* Ketchup */
-body > aside:nth-child(4) > img:nth-child(1) {
+body > div > aside:nth-child(4) > img:nth-child(1) {
   position: fixed;
   top: 20%;
   right: -2.5em;
 }
 
 /* Ketchup  turn on hover */
-body > aside:nth-child(4) > img:nth-child(1):hover {
+body > div > aside:nth-child(4) > img:nth-child(1):hover {
   transform: rotate(-20deg);
 }
 
 /* Mayonnaise */
-body > aside:nth-child(4) > img:nth-child(2) {
+body > div > aside:nth-child(4) > img:nth-child(2) {
   position: fixed;
   top: 50%;
   right: -2.5em;
 }
 
 /* Mayonnaise  turn on hover */
-body > aside:nth-child(4) > img:nth-child(2):hover {
+body > div > aside:nth-child(4) > img:nth-child(2):hover {
   transform: rotate(-20deg);
 }
 
 /* Floating burger */
-body > main > img:nth-child(1) {
-  animation: floatBurger 6s ease-in-out infinite;
-  z-index: -1;
-  border: solid red 2px;
-  fill: green;
+body > div > main > img:nth-child(1) {
+  position: fixed;
+  top: 10%;
+  left: 20%;
+  animation: floatBurger 2s ease-in-out infinite;
 }
 
 @keyframes floatBurger {
 	0% {
-		transform: translate(0px);
-
+		transform: translateY(0);
 	}
-
-  25%{
-    		transform: translate(100%, 100%);
-
-  }
 	50% {
-		transform: translate(50%, 50%);
-
+		transform: translateY(30%);
 	}
-
-  75%{
-    		transform: translate(100%, 100%);
-
-  }
 	100% {
-		transform: translatey(0px);
+		transform: translateY(0);
 	}
-
 }
 
-footer > img {
-  width: 15em;
-  height: 15em;
+
+/* Floating fries */
+body > div > main > img:nth-child(2) {
+  position: fixed;
+  top: 40%;
+  left: 20%;
+  animation-name: floatFries;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floatFries {
+  0%   {
+    transform: translateY(0);
+  }
+  50%  {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Floating fries */
+body > div > main > img:nth-child(2):focus {
+  background-color: green;
+  animation: friesToBag 5s ease-in-out 1;
+}
+
+@keyframes friesToBag {
+  0%   {
+    transform: translateX(0);
+  }
+  50%  {
+    transform: translateX(300%);
+  }
+  100% {
+    transform: translate(300%, 300%);
+  }
+}
+
+/* Floating hotdog */
+body > div > main > img:nth-child(3) {
+  position: fixed;
+  top: 40%;
+  right: 20%;
+  animation: floatHotdog 3s ease-in-out infinite;
+}
+
+@keyframes floatHotdog {
+  0%   {
+    transform: translateY(0);
+  }
+  50%  {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Floating chicken wing */
+body > div > main > img:nth-child(4) {
+  position: fixed;
+  top: 10%;
+  right: 20%;
+  animation: floatChickenwing 2s ease-in-out infinite;
+}
+
+@keyframes floatChickenwing {
+  0%   {
+    transform: translateY(0);
+  }
+  50%  {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+div > footer > img {
+  width: 10em;
+  height: 10em;
   position: fixed;
   bottom: 0;
   left: 45%;
