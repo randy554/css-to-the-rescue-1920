@@ -2,14 +2,67 @@
 body  {
   margin: 0;
   padding: 0;
-  /* background-color: #FFBC3A; */
   height: 100vh;
-  /* cursor: url('../images/knife.png'),auto; */
-  /* cursor: url('../images/hammer.png'),auto; */
-  /* perspective: 1800px; */
 }
 
+body > div {
+  --darkmode-background:  #2F2F2F;
+  --lightmode-background: #FFBC3A;
+  /* --darkmode-background: #292929; */
+  --darkmode-elements: #BA8AF9;
+  background-color: var(--lightmode-background);
+  height: 100%;
+  width:100%;
+}
 
+/* Don't show back to lightmode link */
+a[data-light] {
+  display: none;
+}
+
+/* Darkmode toggle */
+a[data-dark] {
+  color: var(--darkmode-elements);
+}
+
+/* Darkmode - don't show images */
+img[data-light] {
+  display: none;
+}
+
+/* main > img[data-light]{
+  display: block;
+} */
+
+/* Darkmode set background */
+body:target > div {
+  background-color: var(--darkmode-background);
+}
+
+body:target a[data-dark] {
+  display: none;
+}
+
+body:target main > img {
+  display: none;
+}
+
+body:target aside > img {
+  display: none;
+}
+
+body:target aside > a > img {
+  display: none;
+}
+
+body:target a[data-light] {
+  display: block;
+  color: var(--lightmode-background);
+}
+
+body:target img[data-light]{
+  display: block;
+}
 
 /* All images(items) should have the same size by default */
 body > div > main > img {
@@ -45,8 +98,6 @@ body > div > header {
 
 body > div > header > h1 {
   margin: 0;
-  /* font-family: 'Bungee Inline', cursive; */
-  /* font-family: 'Krona One', sans-serif; */
   color: #A93028;
   text-shadow: 2px 2px #583D34;
   font-size: 3em;
@@ -60,96 +111,78 @@ body > div > header > p {
   margin-bottom: 0;
 }
 
-aside > img, aside > label > img {
+aside > img, aside > a > img {
   width: 10em;
   height: 10em;
 }
 
 /* Knife tool */
-body > div > aside:nth-child(3) > label:nth-child(1) > img {
+body > div > aside:nth-child(3) > a:nth-child(1) > img {
   position: fixed;
   top: 20%;
   left: -2.5em;
 }
 
 /* Knife tool turn on hover */
-body > div > aside:nth-child(3) > label:nth-child(1) > img:hover {
+body > div > aside:nth-child(3) > a:nth-child(1) > img:hover {
   transform: rotate(-20deg);
 }
 
-/* [type="radio"]:nth-of-type(1):checked ~ [for="stateKnife"]:hover {
-  background-color: green;
-} */
-
-
 html:target > body {
-  /* cursor: help; */
   cursor: url('../images/knife.png'), auto;
+  /* cursor: url('../images/darkmode/darkmode_knife.png'), auto; */
 }
 
 head:target ~ body {
-  /* cursor: copy; */
   cursor: url('../images/hammer.png'), auto;
 }
 
 
 
-
-/* #stateKnife:checked ~ .wrapper {
-    cursor: url('../images/knife.png'), auto;
-}
-
-#stateHammer:checked ~ .wrapper {
-    cursor: url('../images/hammer.png'), auto;
-    cursor: help;
-} */
-
-
-.wrapper {
-  background-color: #FFBC3A;
-  height: 100%;
-  width:100%;
-}
-
-
 /* Hammer tool */
-body > div > aside:nth-child(3) > label:nth-child(2) > img{
+body > div > aside:nth-child(3) > a:nth-child(2) > img{
   position: fixed;
   top: 50%;
   left: -2.5em;
 }
 
 /* Hammer tool turn on hover */
-body > div > aside:nth-child(3) > label:nth-child(2) > img:hover {
+body > div > aside:nth-child(3) > a:nth-child(2) > img:hover {
   transform: rotate(-20deg);
 }
 
 /* Ketchup */
-body > div > aside:nth-child(4) > img:nth-child(1) {
+/* Ketchup darkmode */
+body > div > aside:nth-child(6) > img:nth-child(1), body > div > aside:nth-child(6) > img:nth-child(2) {
   position: fixed;
   top: 20%;
   right: -2.5em;
 }
 
-/* Ketchup  turn on hover */
-body > div > aside:nth-child(4) > img:nth-child(1):hover {
+/* Ketchup turn on hover */
+/* Ketchup turn on hover darkmode */
+body > div > aside:nth-child(6) > img:nth-child(1):hover, body > div > aside:nth-child(6) > img:nth-child(2):hover {
   transform: rotate(-20deg);
 }
 
 /* Mayonnaise */
-body > div > aside:nth-child(4) > img:nth-child(2) {
+/* Mayonnaise darkmode */
+body > div > aside:nth-child(6) > img:nth-child(3), body > div > aside:nth-child(6) > img:nth-child(4) {
   position: fixed;
   top: 50%;
   right: -2.5em;
 }
 
 /* Mayonnaise  turn on hover */
-body > div > aside:nth-child(4) > img:nth-child(2):hover {
+/* Mayonnaise  turn on hover darkmode */
+body > div > aside:nth-child(6) > img:nth-child(3):hover, body > div > aside:nth-child(6) > img:nth-child(4):hover {
   transform: rotate(-20deg);
 }
 
+
 /* Floating burger */
-body > div > main > img:nth-child(1) {
+/* Darkmode burger */
+body > div > main > img:nth-child(1), body > div > main > img:nth-child(2) {
   position: fixed;
   top: 10%;
   left: 20%;
@@ -170,7 +203,8 @@ body > div > main > img:nth-child(1) {
 
 
 /* Floating fries */
-body > div > main > img:nth-child(2) {
+/* Darkmode fries */
+body > div > main > img:nth-child(3), body > div > main > img:nth-child(4) {
   position: fixed;
   top: 40%;
   left: 20%;
@@ -211,7 +245,8 @@ body > div > main > img:nth-child(2):focus {
 }
 
 /* Floating hotdog */
-body > div > main > img:nth-child(3) {
+/* Darkmode hotdog */
+body > div > main > img:nth-child(5), body > div > main > img:nth-child(6) {
   position: fixed;
   top: 40%;
   right: 20%;
@@ -231,7 +266,8 @@ body > div > main > img:nth-child(3) {
 }
 
 /* Floating chicken wing */
-body > div > main > img:nth-child(4) {
+/* Darkmode chicken wing */
+body > div > main > img:nth-child(7), body > div > main > img:nth-child(8) {
   position: fixed;
   top: 10%;
   right: 20%;
@@ -250,7 +286,7 @@ body > div > main > img:nth-child(4) {
   }
 }
 
-
+/* Footer */
 div > footer > img {
   width: 10em;
   height: 10em;
@@ -258,3 +294,15 @@ div > footer > img {
   bottom: 0;
   left: 45%;
 }
+
+
+/* main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main img {
+  max-width: 1500px;
+} */
