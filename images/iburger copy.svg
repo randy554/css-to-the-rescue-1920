@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 63.8 54.7" style="enable-background:new 0 0 63.8 54.7;" xml:space="preserve">
+<polygon id="bread_top" style="fill:none;stroke:#B22D2D;stroke-width:2;stroke-miterlimit:10;" points="1.1,19.3 1.8,10.7 8.4,4.7 
+	21.8,1 41.8,1 54.9,4.5 61.8,10.7 62.5,19.3 "/>
+<g id="bread_seeds">
+	<circle id="seed_9" style="fill:#B22D2D;" cx="12.1" cy="11.7" r="1"/>
+	<circle id="seed_8" style="fill:#B22D2D;" cx="16.8" cy="7.7" r="1"/>
+	<circle id="seed_7" style="fill:#B22D2D;" cx="21.8" cy="11.7" r="1"/>
+	<circle id="seed_6" style="fill:#B22D2D;" cx="26.8" cy="7.7" r="1"/>
+	<circle id="seed_5" style="fill:#B22D2D;" cx="31.8" cy="11.7" r="1"/>
+	<circle id="seed_4" style="fill:#B22D2D;" cx="36.8" cy="7.7" r="1"/>
+	<circle id="seed_3" style="fill:#B22D2D;" cx="41.8" cy="11.7" r="1"/>
+	<circle id="seed_2" style="fill:#B22D2D;" cx="46.8" cy="7.7" r="1"/>
+	<circle id="seed_1" style="fill:#B22D2D;" cx="51.8" cy="11.7" r="1"/>
+</g>
+<polygon id="bread_bottom" style="fill:none;stroke:#B22D2D;stroke-width:2;stroke-miterlimit:10;" points="1.1,45.2 1.8,50.9 
+	5.8,53.7 56.9,53.7 61.4,51.2 62.8,46 61.8,42.8 1.8,42.8 "/>
+<path id="meat" style="fill:none;stroke:#B22D2D;stroke-width:2;stroke-miterlimit:10;" d="M59.3,32.6H4.7c-1.4,0-2.5-1.1-2.5-2.5
+	l0,0c0-1.4,1.1-2.5,2.5-2.5h54.6c1.4,0,2.5,1.1,2.5,2.5l0,0C61.8,31.5,60.7,32.6,59.3,32.6z"/>
+<polyline id="salad" style="fill:none;stroke:#B22D2D;stroke-width:2;stroke-miterlimit:10;" points="3.8,36.6 11.4,38.7 21.8,36.4 
+	31.8,39 41.8,36.4 50.8,38.7 59.7,36.8 "/>
+<g id="cheese_group">
+	<polyline id="cheese_2" style="fill:none;stroke:#B22D2D;stroke-width:2;stroke-miterlimit:10;" points="3.8,23.6 15.8,23.6 
+		31.7,34.6 47.8,23.6 59.9,23.6 	"/>
+	<polygon id="cheese_1" style="fill:#FFFFFF;" points="15.8,22.6 47.8,22.6 31.8,33.5 	"/>
+</g>
+</svg>
