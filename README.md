@@ -1,6 +1,7 @@
 # Minor 19-20: CSS to the Rescue (Floating Burgers)
 
-<!-- ![Trivia app screenshot](https://raw.githubusercontent.com/randy554/web-app-from-scratch-1920/master/images/Trivia%20app.png) -->
+![Floating burger screenshot](https://raw.githubusercontent.com/randy554/css-to-the-rescue-1920/master/images/floating%20burger%20light.png)
+![Floating burger dark mode screenshot](https://raw.githubusercontent.com/randy554/css-to-the-rescue-1920/master/images/floating%20burger%20dark.png)
 
 ### Inhoudsopgave
 
@@ -48,25 +49,25 @@ Aan deze opdracht zijn de volgende leerdoelen verbonden:
 
 ### Aantal gebruikte CSS properties & selectors
 
-  :active
-  :hover
-  :focus
-  :target
-  cursor
-  @keyframes
-  filter
-  animation
-  fill
-  background-image
-  background-repeat
-  flex
-  justify-content
+    :active
+    :hover
+    :focus
+    :target
+    cursor
+    @keyframes
+    filter
+    animation
+    fill
+    background-image
+    background-repeat
+    flex
+    justify-content
 
 
-  a[data-dark]
-  img[src^="images/darkmode"]
-  :nth-child(3)
-  img:nth-child(3):hover
+    a[data-dark]
+    img[src^="images/darkmode"]
+    :nth-child(3)
+    img:nth-child(3):hover
 
 
 ### Verlanglijst
