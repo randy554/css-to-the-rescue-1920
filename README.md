@@ -1,6 +1,9 @@
 # Minor 19-20: CSS to the Rescue (Floating Burgers)
 
 ![Floating burger screenshot](https://raw.githubusercontent.com/randy554/css-to-the-rescue-1920/master/images/floating%20burger%20light.png)
+
+## Dark mode
+
 ![Floating burger dark mode screenshot](https://raw.githubusercontent.com/randy554/css-to-the-rescue-1920/master/images/floating%20burger%20dark.png)
 
 # Inhoudsopgave
@@ -20,7 +23,7 @@ CSS (geen Javascript).
 
 Ik heb ervoor gekozen om een responsive menukaart te maken voor een snackbar.
 
-### Gekozen context en beperkingen
+# Gekozen context en beperkingen
 
 Om de opdracht interessanter/uitdagender te maken hoor je naast je concept een context te kiezen en een aantal beperkingen. Dit zijn
 mijn gekozen context en beperkingen:
@@ -31,14 +34,14 @@ mijn gekozen context en beperkingen:
 - When SVG meets CSS: Shapes / Masks / SVG
 
 
-### Installeren
+# Installeren
 
 
 1. Download deze repo naar een willekeurige locatie op de pc.
 2. Navigeer naar de map: css-to-the-rescue-1920s.
 3. Open het bestand index.html.
 
-### Leerdoelen
+# Leerdoelen
 
 Aan deze opdracht zijn de volgende leerdoelen verbonden:
 
@@ -47,7 +50,7 @@ Aan deze opdracht zijn de volgende leerdoelen verbonden:
 - You understand the interactive parts of CSS: Is the UX fully enhanced within in given CSS scope.
 - You have been experimenting: Have the learning goals been stretched?
 
-### Aantal gebruikte CSS properties & selectors
+# Aantal gebruikte CSS properties & selectors
 
     :active
     :hover
@@ -63,14 +66,13 @@ Aan deze opdracht zijn de volgende leerdoelen verbonden:
     flex
     justify-content
 
-
     a[data-dark]
     img[src^="images/darkmode"]
     :nth-child(3)
     img:nth-child(3):hover
 
 
-### Verlanglijst
+# Verlanglijst
 - [] artikelen in papieren zak krijgen (rekening houdend met responsive layout zonder mediaqueries)
 - [] darkmode via mediaqueries & checkboxes
 - [] animation-fillmode
@@ -78,7 +80,7 @@ Aan deze opdracht zijn de volgende leerdoelen verbonden:
 en de mogelijke effecten met z-index en de position waardes.
 
 
-### Bronnen & credits
+# Bronnen & credits
 
 
 ## Gebruikte iconen
@@ -96,7 +98,7 @@ Info icon
 https://thenounproject.com/search/?q=info%20icon&i=3039299
 
 
-## Hulp & uitleg
+# Hulp & uitleg
 
 Credits ga naar:
 
