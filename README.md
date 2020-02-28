@@ -3,7 +3,7 @@
 ![Floating burger screenshot](https://raw.githubusercontent.com/randy554/css-to-the-rescue-1920/master/images/floating%20burger%20light.png)
 ![Floating burger dark mode screenshot](https://raw.githubusercontent.com/randy554/css-to-the-rescue-1920/master/images/floating%20burger%20dark.png)
 
-### Inhoudsopgave
+# Inhoudsopgave
 
 - Floating burgers
 - Gekozen context en beperkingen
@@ -13,7 +13,7 @@
 - Verlanglijst
 - License
 
-### Floating Burgers
+# Floating Burgers
 Voor het vak: CSS to the rescue (Minor: Web development) is het de bedoeling dat je aan de hand van een gekozen concept binnen
 3 weken tijd, zoveel mogelijk gaat experimenteren met CSS. Het eindproduct moet een interactive website zijn die gebouwd is met
 CSS (geen Javascript).
