@@ -185,7 +185,7 @@ html:target > body:active {
 }
 
 head:target ~ body {
-  cursor: url('../images/hammer.png'), auto;
+  cursor: url('../images/Hammer.png'), auto;
 }
 
 head:target ~ body:active {
